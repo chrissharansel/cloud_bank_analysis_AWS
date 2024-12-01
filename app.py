@@ -241,10 +241,11 @@ def delete_account():
             db.session.commit()
             return redirect(url_for('list_accounts'))
         else:
-            return redirect(url_for('list_accounts')) #'<h1>Invalid Account ID & Password combination</h1>'
-
+            return redirect(url_for('list_accounts')) 
     return render_template('delete_account.html',form=form)
 
 if __name__ == "__main__":
     app.debug = True
     app.run(host="0.0.0.0", port=5000)
+  
+
