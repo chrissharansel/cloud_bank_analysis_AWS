@@ -245,5 +245,5 @@ def delete_account():
 
     return render_template('delete_account.html',form=form)
 
-if __name__ == '__main__':
-    app.run(debug=False)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
